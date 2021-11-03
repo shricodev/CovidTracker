@@ -51,7 +51,6 @@ def get_data():
         ls2 = [i.get_text() for i in todayUpdate]
 
         ls3 = [i.split("[source]") for i in ls2]
-        ls3 = [i.split("[source]") for i in ls2]
 
         for items in ls3:
             if items != "":
