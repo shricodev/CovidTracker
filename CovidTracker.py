@@ -19,6 +19,11 @@ print(
 country = input(
     "Enter the country name to see the data of COVID-19 cases alltime/today: "
 ).lower()
+
+if country == '':
+    print('Invalid Input!')
+    sys.exit()
+    
 url = "https://worldometers.info/coronavirus" + "/country/" + country
 # print(url)
 head_req = requests.get(url, allow_redirects=True)
