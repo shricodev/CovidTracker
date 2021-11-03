@@ -8,7 +8,7 @@ This is a small python script to get COVID-19 update through notification system
 
 Requires python3 to be installed on your computer.
 
-```bash
+```python
 git clone https://github.com/r3alix01/CovidTracker
 cd CovidTracker
 python3 install -r requirements.txt
