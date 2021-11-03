@@ -30,11 +30,7 @@ sed -i -e 's/\r$//' CovidTracker.py
 
  - WINDOWS
 
-The best way to run this tool to get frequent updates without running this tool manually all the time is to create a task in Windows Task Scheduler. For additional guides, follow [this guide](https://www.windowscentral.com/how-create-automated-task-using-task-scheduler-windows-10). Or, simply run this command once 
-
-```python
-pythonw /path/to/CovidTracker.py
-```
+The best way to run this tool to get frequent updates without running this tool manually all the time is to create a task in Windows Task Scheduler. For additional guides, follow [this guide](https://www.windowscentral.com/how-create-automated-task-using-task-scheduler-windows-10).
 
 - LINUX
 
