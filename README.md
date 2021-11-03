@@ -11,7 +11,7 @@ Requires python3 to be installed on your computer.
 ```python
 git clone https://github.com/r3alix01/CovidTracker.git
 cd CovidTracker
-python3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
     
 ## Usage
