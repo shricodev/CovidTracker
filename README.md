@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
 ## Usage
 
 ```python
-pythonw /path/to/CovidTracker.py
+python3 /path/to/CovidTracker.py
 ```
 If you face any error while running this tool in your Linux System. Run this command
 
