@@ -33,6 +33,12 @@ if head_req.url == "https://www.worldometers.info/404.shtml":
     print("Enter correct country name. Check your input!")
     sys.exit()
 
+response = requests.get("https://iconarchive.com/download/i88232/icons8/ios7/Healthcare-Virus.ico")
+
+file = open("sample_image.ico", "wb")
+file.write(response.content)
+file.close()
+
 
 def get_data():
     global ls
@@ -71,14 +77,15 @@ def notifications(userInput):
 
     # global ls4
     from plyer import notification
-    from urllib.request import urlretrieve
+    # from urllib.request import urlretrieve
 
     ls2 = []
     ssl._create_default_https_context = ssl._create_unverified_context
-    imgGet = urlretrieve(
-        "https://iconarchive.com/download/i88232/icons8/ios7/Healthcare-Virus.ico",
-        r"C:\Windows\Temp\sample.ico",
-    )
+    # imgGet = urlretrieve(
+    #     "https://iconarchive.com/download/i88232/icons8/ios7/Healthcare-Virus.ico",
+    #     r"C:\Windows\Temp\sample.ico",
+    # )
+    # url = 'https://iconarchive.com/download/i88232/icons8/ios7/Healthcare-Virus.ico'
 
     todayUpdate = parsed.findAll("li", class_="news_li")
     ls2 = [i.get_text() for i in todayUpdate]
@@ -88,7 +95,7 @@ def notifications(userInput):
         notification.notify(
             title=f"Coronavirus Update: {country.upper()} Today",
             message=f"Today's Cases: {ls4[0][0]}",
-            app_icon=r"C:\Windows\Temp\sample.ico",
+            app_icon="sample_image.ico",
             timeout=15,
         )
         time.sleep(10800)
@@ -121,7 +128,7 @@ def one_time():
     notification.notify(
         title=f"Coronavirus Update: {country.upper()}",
         message=f"Total Cases: {ls1[0]}, Deaths: {ls1[1]} and recovered: {ls1[2]}",
-        app_icon=r"C:\Windows\Temp\sample.ico",
+        app_icon="sample_image.ico",
         timeout=15,
     )
 
