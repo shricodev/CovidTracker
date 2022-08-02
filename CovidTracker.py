@@ -2,7 +2,7 @@
 Simple tool written in Python using (https://worldometers.info) to get updates of COVID-19 cases in real time.
 Supports notification system to give updates in 3-hours interval.
 
-Author: Piyush Achärya (~r3alix01)
+Author: Shrijal Achärya (~YuShx01)
 """
 
 import sys
